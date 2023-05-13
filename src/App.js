@@ -4,8 +4,8 @@ import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
 import './App.scss';
 import AuthLayout from "./components/layout/AuthLayout";
-import Login from "./pages/home/Login";
-import About from "./pages/home/About";
+import Login from "./pages/login/Login";
+import About from "./pages/about/About";
 
 function App() {
   return (
