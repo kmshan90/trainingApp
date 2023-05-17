@@ -1,42 +1,42 @@
 import React, { useState, useEffect } from "react";
 const AdvancedReact = () => {
-    const [Advanced, setAdvanced] = useState([]);
-    const fetchAdvancedData = async () => {
-        try{
-          const data = await fetch("%PUBLIC_URL%/data.json");
-          const dataJson = await data.json();
-          const filteredData = await dataJson.filter((item)=>{return item.level === "advanced"});
-          setAdvanced(filteredData);
-        }
-        catch(e){
-            console.log(e)
-        }
-    }
-    const handleCompleted = (e, id) =>{
-        const newData = [...Advanced]; 
-        newData[0].topic = newData[0].topic.map((item) => {
-            if(item.id === id){
-                return {...item, completed: e.target.checked}
-            }
-            return item;
-        });
-        setAdvanced([...newData]);
-        console.log(Advanced)
-    }
-    const handleRemove = (id) =>{
-        const newData = [...Advanced]; 
-        newData[0].topic = newData[0].topic.filter((item) => {
-            return item.id !== id
-        });
-        setAdvanced([...newData]);
-        console.log(Advanced)
-    }
-    useEffect(() => {
-        fetchAdvancedData();
-    },[])
+    // const [Advanced, setAdvanced] = useState([]);
+    // const fetchAdvancedData = async () => {
+    //     try{
+    //       const data = await fetch("./data.json");
+    //       const dataJson = await data.json();
+    //       const filteredData = await dataJson.filter((item)=>{return item.level === "advanced"});
+    //       setAdvanced(filteredData);
+    //     }
+    //     catch(e){
+    //         console.log(e)
+    //     }
+    // }
+    // const handleCompleted = (e, id) =>{
+    //     const newData = [...Advanced]; 
+    //     newData[0].topic = newData[0].topic.map((item) => {
+    //         if(item.id === id){
+    //             return {...item, completed: e.target.checked}
+    //         }
+    //         return item;
+    //     });
+    //     setAdvanced([...newData]);
+    //     console.log(Advanced)
+    // }
+    // const handleRemove = (id) =>{
+    //     const newData = [...Advanced]; 
+    //     newData[0].topic = newData[0].topic.filter((item) => {
+    //         return item.id !== id
+    //     });
+    //     setAdvanced([...newData]);
+    //     console.log(Advanced)
+    // }
+    // useEffect(() => {
+    //     fetchAdvancedData();
+    // },[])
     return (
         <div className="w-full float-left">
-            {Advanced?.length > 0 && 
+            {/* {Advanced?.length > 0 && 
             <div className="w-full float-left border">
                 {Advanced[0].topic.map((item)=>(
                     <div key={item.id} className="w-full float-left p-4 border-b last-of-type:border-b-0 flex items-center space-x-4 justify-between">
@@ -49,7 +49,8 @@ const AdvancedReact = () => {
                     </div>
                 ))}
             </div>
-            }
+            } */}
+            Advanced
         </div>
     );
 };

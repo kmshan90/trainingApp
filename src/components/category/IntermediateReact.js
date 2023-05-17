@@ -1,42 +1,42 @@
 import React, { useState, useEffect } from "react";
 const IntermediateReact = () => {
-    const [Intermediate, setIntermediate] = useState([]);
-    const fetchIntermediateData = async () => {
-        try{
-          const data = await fetch("%PUBLIC_URL%/data.json");
-          const dataJson = await data.json();
-          const filteredData = await dataJson.filter((item)=>{return item.level === "intermediate"});
-          setIntermediate(filteredData);
-        }
-        catch(e){
-            console.log(e)
-        }
-    }
-    const handleCompleted = (e, id) =>{
-        const newData = [...Intermediate]; 
-        newData[0].topic = newData[0].topic.map((item) => {
-            if(item.id === id){
-                return {...item, completed: e.target.checked}
-            }
-            return item;
-        });
-        setIntermediate([...newData]);
-        console.log(Intermediate)
-    }
-    const handleRemove = (id) =>{
-        const newData = [...Intermediate]; 
-        newData[0].topic = newData[0].topic.filter((item) => {
-            return item.id !== id
-        });
-        setIntermediate([...newData]);
-        console.log(Intermediate)
-    }
-    useEffect(() => {
-        fetchIntermediateData();
-    },[])
+    // const [Intermediate, setIntermediate] = useState([]);
+    // const fetchIntermediateData = async () => {
+    //     try{
+    //       const data = await fetch("./data.json");
+    //       const dataJson = await data.json();
+    //       const filteredData = await dataJson.filter((item)=>{return item.level === "intermediate"});
+    //       setIntermediate(filteredData);
+    //     }
+    //     catch(e){
+    //         console.log(e)
+    //     }
+    // }
+    // const handleCompleted = (e, id) =>{
+    //     const newData = [...Intermediate]; 
+    //     newData[0].topic = newData[0].topic.map((item) => {
+    //         if(item.id === id){
+    //             return {...item, completed: e.target.checked}
+    //         }
+    //         return item;
+    //     });
+    //     setIntermediate([...newData]);
+    //     console.log(Intermediate)
+    // }
+    // const handleRemove = (id) =>{
+    //     const newData = [...Intermediate]; 
+    //     newData[0].topic = newData[0].topic.filter((item) => {
+    //         return item.id !== id
+    //     });
+    //     setIntermediate([...newData]);
+    //     console.log(Intermediate)
+    // }
+    // useEffect(() => {
+    //     fetchIntermediateData();
+    // },[])
     return (
         <div className="w-full float-left">
-            {Intermediate?.length > 0 && 
+            {/* {Intermediate?.length > 0 && 
             <div className="w-full float-left border">
                 {Intermediate[0].topic.map((item)=>(
                     <div key={item.id} className="w-full float-left p-4 border-b last-of-type:border-b-0 flex items-center space-x-4 justify-between">
@@ -49,7 +49,8 @@ const IntermediateReact = () => {
                     </div>
                 ))}
             </div>
-            }
+            } */}
+            Intermediate
         </div>
     );
 };

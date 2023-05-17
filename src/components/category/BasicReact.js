@@ -1,42 +1,42 @@
 import React, { useState, useEffect } from "react";
 const BasicReact = () => {
-    const [basic, setBasic] = useState([]);
-    const fetchBasicData = async () => {
-        try{
-          const data = await fetch("%PUBLIC_URL%/data.json");
-          const dataJson = await data.json();
-          const filteredData = await dataJson.filter((item)=>{return item.level === "basic"});
-          setBasic(filteredData);
-        }
-        catch(e){
-            console.log(e)
-        }
-    }
-    const handleCompleted = (e, id) =>{
-        const newData = [...basic]; 
-        newData[0].topic = newData[0].topic.map((item) => {
-            if(item.id === id){
-                return {...item, completed: e.target.checked}
-            }
-            return item;
-        });
-        setBasic([...newData]);
-        console.log(basic)
-    }
-    const handleRemove = (id) =>{
-        const newData = [...basic]; 
-        newData[0].topic = newData[0].topic.filter((item) => {
-            return item.id !== id
-        });
-        setBasic([...newData]);
-        console.log(basic)
-    }
-    useEffect(() => {
-        fetchBasicData();
-    },[])
+    // const [basic, setBasic] = useState([]);
+    // const fetchBasicData = async () => {
+    //     try{
+    //       const data = await fetch("./data.json");
+    //       const dataJson = await data.json();
+    //       const filteredData = await dataJson.filter((item)=>{return item.level === "basic"});
+    //       setBasic(filteredData);
+    //     }
+    //     catch(e){
+    //         console.log(e)
+    //     }
+    // }
+    // const handleCompleted = (e, id) =>{
+    //     const newData = [...basic]; 
+    //     newData[0].topic = newData[0].topic.map((item) => {
+    //         if(item.id === id){
+    //             return {...item, completed: e.target.checked}
+    //         }
+    //         return item;
+    //     });
+    //     setBasic([...newData]);
+    //     console.log(basic)
+    // }
+    // const handleRemove = (id) =>{
+    //     const newData = [...basic]; 
+    //     newData[0].topic = newData[0].topic.filter((item) => {
+    //         return item.id !== id
+    //     });
+    //     setBasic([...newData]);
+    //     console.log(basic)
+    // }
+    // useEffect(() => {
+    //     fetchBasicData();
+    // },[])
     return (
         <div className="w-full float-left">
-            {basic?.length > 0 && 
+            {/* {basic?.length > 0 && 
             <div className="w-full float-left border">
                 {basic[0].topic.map((item)=>(
                     <div key={item.id} className="w-full float-left p-4 border-b last-of-type:border-b-0 flex items-center space-x-4 justify-between">
@@ -49,7 +49,8 @@ const BasicReact = () => {
                     </div>
                 ))}
             </div>
-            }
+            } */}
+            Basic
         </div>
     );
 };
