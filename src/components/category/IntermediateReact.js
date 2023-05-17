@@ -3,7 +3,7 @@ const IntermediateReact = () => {
     const [intermediate, setIntermediate] = useState([]);
     const fetchIntermediateData = async () => {
         try{
-          const data = await fetch("./trainingApp/data.json");
+          const data = await fetch("https://kmshan90.github.io/trainingApp/data.json");
           const dataJson = await data.json();
           const filteredData = await dataJson.filter((item)=>{return item.level === "intermediate"});
           setIntermediate(filteredData);
