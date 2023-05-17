@@ -5,7 +5,7 @@ import Home from "./pages/home/Home";
 import './App.scss';
 import AuthLayout from "./components/layout/AuthLayout";
 import Login from "./pages/login/Login";
-import About from "./pages/about/About";
+import Counter from "./pages/counter/Counter";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="counter" element={<Counter />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
         <Route path="/auth" element={<AuthLayout />}>
