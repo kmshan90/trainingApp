@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import Counter from "../../pages/counter/Counter";
-const DemoModal = ({hasModal,handleModalClose}) => {
+import React from "react";
+const DemoModal = ({handleModalClose}) => {
     return (
         <>
             <div className="w-screen h-screen fixed top-0 left-0 bg-black/20"></div>
