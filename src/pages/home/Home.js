@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AdvancedReact from "../../components/category/AdvancedReact";
 import BasicReact from "../../components/category/BasicReact";
 import IntermediateReact from "../../components/category/IntermediateReact";
