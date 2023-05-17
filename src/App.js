@@ -9,7 +9,7 @@ import Counter from "./pages/counter/Counter";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/trainingApp">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
