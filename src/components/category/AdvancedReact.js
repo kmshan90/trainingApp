@@ -3,7 +3,7 @@ const AdvancedReact = () => {
     const [Advanced, setAdvanced] = useState([]);
     const fetchAdvancedData = async () => {
         try{
-          const data = await fetch("./data.json");
+          const data = await fetch("%PUBLIC_URL%/data.json");
           const dataJson = await data.json();
           const filteredData = await dataJson.filter((item)=>{return item.level === "advanced"});
           setAdvanced(filteredData);
