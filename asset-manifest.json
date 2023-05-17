@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kmshan90/trainingApp/static/css/main.8123f18c.css",
+    "main.js": "/kmshan90/trainingApp/static/js/main.55efe4c2.js",
+    "static/js/787.db79f984.chunk.js": "/kmshan90/trainingApp/static/js/787.db79f984.chunk.js",
+    "index.html": "/kmshan90/trainingApp/index.html",
+    "main.8123f18c.css.map": "/kmshan90/trainingApp/static/css/main.8123f18c.css.map",
+    "main.55efe4c2.js.map": "/kmshan90/trainingApp/static/js/main.55efe4c2.js.map",
+    "787.db79f984.chunk.js.map": "/kmshan90/trainingApp/static/js/787.db79f984.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8123f18c.css",
+    "static/js/main.55efe4c2.js"
+  ]
+}

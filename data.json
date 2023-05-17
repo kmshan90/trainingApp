@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "level": "basic",
+    "topic": [
+	      {
+          "id": 1.1,
+          "chapter": "What is React?",
+          "completed": false
+        },
+        {
+          "id": 1.2,
+          "chapter": "JSX",
+          "completed": false
+        },
+        {
+          "id": 1.3,
+          "chapter": "Components",
+          "completed": false
+        },
+        {
+          "id": 1.4,
+          "chapter": "Functional v/s Class components",
+          "completed": false
+        }
+    ]
+  },
+  {
+    "id": 2,
+    "level": "intermediate",
+    "topic": [
+	      {
+          "id": 2.1,
+          "chapter": "Inline styling",
+          "completed": false
+        },
+        {
+          "id": 2.2,
+          "chapter": "Conditional styling",
+          "completed": false
+        },
+        {
+          "id": 2.3,
+          "chapter": "Module CSS",
+          "completed": false
+        },
+        {
+          "id": 2.4,
+          "chapter": "CSS in JS",
+          "completed": false
+        }
+    ]
+  },
+  {
+    "id": 2,
+    "level": "advanced",
+    "topic": [
+	      {
+          "id": 2.1,
+          "chapter": "vite",
+          "completed": false
+        },
+        {
+          "id": 2.2,
+          "chapter": "Next.js",
+          "completed": false
+        },
+        {
+          "id": 2.3,
+          "chapter": "Performance optimization",
+          "completed": false
+        },
+        {
+          "id": 2.4,
+          "chapter": "SEO optimization",
+          "completed": false
+        }
+    ]
+  }
+]
